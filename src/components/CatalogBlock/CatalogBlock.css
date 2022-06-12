@@ -1,0 +1,36 @@
+
+.catalog-block-content {
+    max-width: 1300px;
+    width: 80%;
+    align-self: center;
+
+}
+.catalog-block-headers-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog-block-header-text {
+    font-size: 30px;
+}
+
+.catalog-block-filters {
+    display: flex;
+    justify-content: center;
+    margin: 0px 6px;
+}
+.catalog-blog-cards-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: auto;
+}
+
+.catalog-block-all-cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1210px;
+
+}

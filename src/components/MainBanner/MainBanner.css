@@ -1,0 +1,10 @@
+.main-banner-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.banner-block {
+    width: 1300px;
+    height: 406px;
+    background-size:cover;
+}

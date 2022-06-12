@@ -1,0 +1,53 @@
+.footer-main {
+    background-color: #050608;
+    height: 140px;
+    margin-top: auto;
+}
+a {
+    text-decoration: none;
+    color:#ffff;
+    cursor: default;
+}
+a:hover {
+    color: rgb(123, 214, 199);
+}
+.active {
+    color: rgb(123, 214, 199);
+}
+.footer-main-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-logo-block {
+    height:70%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    cursor: default;
+}
+.footer-logo-image {
+    max-height: 100%;
+}
+.footer-store-name-text {
+    font-size: 22px;
+    color: rgb(160, 112, 140);
+}
+.footer-main-info-block {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 150px;
+}
+.footer-info-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+.footer-headers-text {
+    color: rgb(143, 136, 136);
+}
+.footer-text {
+    margin-top: 5px;
+}

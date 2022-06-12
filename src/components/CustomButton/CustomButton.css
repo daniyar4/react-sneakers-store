@@ -1,0 +1,17 @@
+.custom-bn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #fa9fc9;
+    cursor:default;
+    padding: 0px 14px;
+}
+.custom-bn-block:hover {
+    background-color: #b36287;
+}
+.custom-bn-active {
+    background-color: #b36287;
+}

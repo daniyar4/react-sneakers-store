@@ -1,0 +1,87 @@
+.contacts-page-main-block {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.contacts-page-content {
+    display: block;
+    width: 1200px;
+    align-self: center;
+    max-width: 80%;
+    margin-bottom: 100px;
+}
+.contacts-header-text-block {
+    margin-top: 90px;
+}
+.contacts-header-text {
+    font-size: 30px;
+}
+.contancts-info-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0 25px;
+}
+.contacts-info-header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.contacts-info-header-block:hover {
+    color: #f20113;
+    cursor: pointer;
+}
+.contacts-text {
+    font-size: 21px;
+}
+.contacts-arrow-style {
+    height: 20px;
+}
+.contacts-full-info-block {
+    margin-top: 10px;
+    font-size: 21px;
+}
+.contacts-map-wrapper {
+    width: 600px;
+    height: 400px;
+    margin: 10px 0px;
+}
+.contacts-map-block {
+    width: 600px;
+    height: 400px;
+}
+.contancts-store-info {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.contacts-opening-hours-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 5px;
+}
+.contacts-opening-hours-text {
+    display: inline-block;
+    margin-bottom: 7px;
+    color:#f20113;
+}
+.contacts-phone-number-block {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    color: #636363;
+    font-weight: 600;
+}
+.contacts-requisites-block {
+    width: 100%;
+    font-size: 17px;
+}
+.contacts-requisites-name-text {
+    display: inline-block;
+    width: 30%;
+}

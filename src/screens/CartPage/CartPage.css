@@ -1,0 +1,96 @@
+
+.cart-page-main-block {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+
+}
+.cart-page-content {
+    align-self: center;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 40px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+
+}
+.cart-header-text-block {
+    margin: 0px;
+}
+.cart-header-text {
+    font-size: 30px;
+}
+
+.cart-all-items-block {
+    display: block;
+}
+.cart-item-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-item-image {
+    width: 100px;
+}
+.cart-item-title-block {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+    width: 700px;
+}
+.cart-item-title-text {
+    margin-top: 15px;
+}
+.cart-item-price-block {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.cart-item-price-text {
+    margin-top: 15px;
+}
+.cart-final-sum-block {
+    max-width: 1000px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart-total-text {
+    font-size: 25px;
+}
+.cart-delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #797979;
+    box-sizing: border-box;
+    border-radius:  8px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+    margin-top: 15px;
+}
+.cart-delete-button:hover {
+    opacity: 1;
+}
+.cart-empty-main-block {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.cart-empty-content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+.cart-empty-header-text {
+    font-size: 40px;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+.header-main {
+    height: 70px;
+    background-color: #050608;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+* {
+    font-family: "Roboto Flex";
+}
+a {
+    text-decoration: none;
+    color:#ffff;
+    stroke:#ffff;
+}
+a:hover {
+    color: rgb(123, 214, 199);
+    stroke:rgb(123, 214, 199);
+}
+.active {
+    color: rgb(123, 214, 199);
+    stroke: rgb(123, 214, 199);
+}
+.logo-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+.logo-image {
+    max-height: 100%;
+}
+.store-name-text {
+    font-size: 22px;
+    color: rgb(160, 112, 140);
+}
+.menu-block {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+.menu-name-block {
+    margin: 0px 8px;
+    cursor: default;
+}
+.menu-text {
+    font-weight: 400;
+}
+.search-block {
+    display: flex;
+    margin: 0px 0px 0px 30px;
+    border: #ffff 1px solid;
+    border-radius: 3px;
+    background-color: #ffff;
+    height: 45%;
+}
+.search-block img {
+    margin: 4px;
+}
+.search-block input {
+    border: 0;
+    outline: none;
+    font-size: 16px;
+}
+.cart-block {
+    display: flex;
+    margin: 0px 5px;
+}
+.header-icon-img {
+    margin: 0px 10px;
+    width: 26px;
+    height: 26px;
+}
+

@@ -1,0 +1,23 @@
+.delivery-payment-page-main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.delivery-payment-page-content {
+    width: 1200px;
+    align-self: center;
+    max-width: 80%;
+    margin-bottom: 100px;
+}
+.delivery-payment-header-text-block {
+    margin: 0px;
+}
+.delivery-payment-header-text {
+    font-size: 30px;
+}
+.delivery-payment-text {
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 40px;
+}
