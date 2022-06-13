@@ -3,13 +3,14 @@ import logoCircle from "../../assets/images/logo-circle.png";
 import loupIcon from "../../assets/images/loup-icon.svg";
 import { Link, NavLink } from "react-router-dom";
 import {ReactComponent as CartIcon} from "../../assets/images/cart-icon.svg";
-import { useState } from "react";
 import { setSearchValue } from "../../redux/actions/search";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { totalCartItemsSum } from "../../components/totalCartItemsSum";
 
 const Header = () => {
 
     const dispatch = useDispatch()
+    const cartItems = useSelector((state) => state.cart.cartItems);
 
     const onChangeSearchInput = (event) => {
         dispatch(setSearchValue(event.target.value))
@@ -42,8 +43,9 @@ const Header = () => {
 
             <div className="cart-block">
                 {/* <img className="header-icon-img" src={loginIcon} alt="Login" /> */}
-
+                <span className="header-cart-sum">{totalCartItemsSum(cartItems).toLocaleString('ru-RU')} руб.</span>
                 <NavLink to="cart">
+                    
                     <CartIcon className="header-icon-img"/>
                 </NavLink>
                 

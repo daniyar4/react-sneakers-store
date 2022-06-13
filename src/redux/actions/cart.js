@@ -11,3 +11,10 @@ export const delFromCart = (payload) => (
         payload: payload
     }
 )
+
+export const clearCart = (payload) => (
+    {
+        type: "CLEAR_CART",
+        payload: payload
+    }
+)

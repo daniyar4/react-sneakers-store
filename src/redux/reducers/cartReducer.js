@@ -11,23 +11,15 @@ const cartReducer = (state = initialState, action) => {
             };
 
         case "DEL_FROM_CART":
-            // const delFunc = () => {
-            //     state.cartItems.forEach((element, index) => {
-            //         const stringEl = JSON.stringify(element);
-            //         if ((stringEl === JSON.stringify(action.payload))) {
-            //             // console.log(newItems);
-            //             const newItems = state.cartItems.slice(index, 1)
-            //             return newItems
-            //             // console.log(newItems , 'elf');
-            //         }else {
-            //             return state.cartItems
-            //         }
-            //     });
-            // }
-            // const arr = delFunc()
             return {
                 ...state,
                 cartItems: state.cartItems.filter(item => item.id !== action.payload.id),
+            };
+
+            case "CLEAR_CART":
+            return {
+                ...state,
+                cartItems: [],
             };
 
         default:

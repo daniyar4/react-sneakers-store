@@ -80,10 +80,11 @@ const CatalogBlock = () => {
                         <CustomButton
                             key={button.filter}
                             style={{ margin: "0px 6px" }}
-                            title={button.title}
                             onClick={() => setFilter(button.filter)}
                             active={filter === button.filter ? true : false}
-                        />
+                        >
+                            {button.title}
+                        </CustomButton>
                     ))}
                 </div>
 
@@ -99,7 +100,9 @@ const CatalogBlock = () => {
                     {items.length !== 0 ? (
                         <SearcFilterItems />
                     ) : (
-                        [...Array(8)].map(() => <Card isLoading />)
+                        [...Array(8)].map((i, ind) => (
+                            <Card key={ind} isLoading />
+                        ))
                     )}
                 </div>
             </div>
