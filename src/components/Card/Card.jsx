@@ -6,6 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import ContentLoader from "react-content-loader";
 
 const Card = ({ item, isLoading = false }) => {
+    // Компонент карточки товара, принимает данные товара. Если они не загружены, передает шаблон загрузки
+
     const dispatch = useDispatch();
     const cartItems = useSelector((state) => state.cart.cartItems);
 
@@ -14,7 +16,11 @@ const Card = ({ item, isLoading = false }) => {
             {!isLoading ? (
                 <>
                     <div className="card-image-block">
-                        <img className="card-image" src={item.imageUrl} />
+                        <img
+                            className="card-image"
+                            src={item.imageUrl}
+                            alt="sneakers"
+                        />
                     </div>
                     <div className="card-name-block">
                         <span className="card-name-text">{item.title}</span>
@@ -32,7 +38,7 @@ const Card = ({ item, isLoading = false }) => {
                                     className="card-added-item-button"
                                     onClick={() => dispatch(delFromCart(item))}
                                 >
-                                    <img src={addedItemIcon} />
+                                    <img src={addedItemIcon} alt="added-icon" />
                                 </button>
                             ) : (
                                 <button
@@ -41,7 +47,10 @@ const Card = ({ item, isLoading = false }) => {
                                         dispatch(addToCart(item));
                                     }}
                                 >
-                                    <img src={addToCartIcon} />
+                                    <img
+                                        src={addToCartIcon}
+                                        alt="add-to-icon"
+                                    />
                                 </button>
                             )}
                         </div>
@@ -57,14 +66,7 @@ const Card = ({ item, isLoading = false }) => {
                     backgroundColor="#c9c9c9"
                     foregroundColor="#e6e6e6"
                 >
-                    <rect
-                        x="0"
-                        y="30"
-                        rx="8"
-                        ry="8"
-                        width="220"
-                        height="140"
-                    />
+                    <rect x="0" y="30" rx="8" ry="8" width="220" height="140" />
 
                     <rect x="0" y="180" rx="4" ry="4" width="220" height="20" />
                     <rect x="0" y="210" rx="4" ry="4" width="93" height="20" />

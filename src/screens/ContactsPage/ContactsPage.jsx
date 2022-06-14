@@ -15,6 +15,7 @@ import arrowFaqIcon from "../../assets/images/arrow-faq.png";
 import reversArrowFaqIcon from "../../assets/images/arrow-faq-revers.png";
 
 const ContactsPage = () => {
+    // Страница контактов. Здесь указаны адеса, номера и карта
     const [lubyankaInfo, setLubyankaInfo] = useState(true);
     const [trubnayaInfo, setTrubnayaInfo] = useState(false);
     const [CSKAInfo, setCSKAInfo] = useState(false);
@@ -40,6 +41,7 @@ const ContactsPage = () => {
                                         ? reversArrowFaqIcon
                                         : arrowFaqIcon
                                 }
+                                alt="arrow"
                             />
                         </div>
                         {lubyankaInfo ? (
@@ -97,6 +99,7 @@ const ContactsPage = () => {
                                         ? reversArrowFaqIcon
                                         : arrowFaqIcon
                                 }
+                                alt="arrow"
                             />
                         </div>
                         {trubnayaInfo ? (
@@ -152,7 +155,9 @@ const ContactsPage = () => {
                                 src={
                                     CSKAInfo ? reversArrowFaqIcon : arrowFaqIcon
                                 }
+                                alt="arrow"
                             />
+                            
                         </div>
                         {CSKAInfo ? (
                             <div className="contacts-full-info-block">
@@ -211,6 +216,7 @@ const ContactsPage = () => {
                                         ? reversArrowFaqIcon
                                         : arrowFaqIcon
                                 }
+                                alt="arrow"
                             />
                         </div>
                         {requisitesInfo ? (

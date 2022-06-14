@@ -2,6 +2,7 @@
 import "./DeliveryAndPaymentPage.css";
 
 const DeliveryAndPaymentPage = () => {
+    // Страница информации о доставке и оплате
     return (
         <div className="delivery-payment-page-main-block">
 

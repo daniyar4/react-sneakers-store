@@ -11,6 +11,9 @@ import goBackArrowIcon from "../../assets/images/go-back-arrow.svg";
 import { totalCartItemsSum } from "../../components/totalCartItemsSum";
 
 const CartPage = () => {
+    // Страница корзины, получает данные через redux
+    // При оформлении отправляет данные на сервер
+    
     const [modalActive, setModalActive] = useState(false);
     const cartItems = useSelector((state) => state.cart.cartItems);
     const dispatch = useDispatch();
@@ -73,6 +76,7 @@ const CartPage = () => {
                                 <img
                                     className="cart-item-image"
                                     src={item.imageUrl}
+                                    alt="sneakers"
                                 />
                                 <div className="cart-item-title-block">
                                     <span className="cart-item-title-text">

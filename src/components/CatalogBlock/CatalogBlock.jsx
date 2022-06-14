@@ -8,6 +8,7 @@ import CustomButton from "../CustomButton/CustomButton";
 import { useSelector } from "react-redux";
 
 const CatalogBlock = () => {
+    // Компонент рендеринга всех товаров
     const [items, setItems] = useState([]);
     const [selectedSort, setSelectedSort] = useState("");
     const [filter, setFilter] = useState("all");

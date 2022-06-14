@@ -1,6 +1,7 @@
 import React from "react";
 
 const Select = ({options, defaultValue, value, onChange}) => {
+    // Компонент сортировки товара по цене или по названию
     return (
             <select
             value={value}

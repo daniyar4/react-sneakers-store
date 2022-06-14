@@ -2,6 +2,7 @@
 import "./ReturnPage.css";
 
 const ReturnPage = () => {
+    // Страница возврата товара
     return (
         <div className="return-page-main-block">
 
