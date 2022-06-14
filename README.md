@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+Это интернет-магазин на ReactJS с использованием redux, react-router, react-content-loader
+
+
 ## Available Scripts
 
 In the project directory, you can run:
